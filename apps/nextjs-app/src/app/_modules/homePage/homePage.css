@@ -34,10 +34,6 @@ html {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
-}
-
-.title span {
-  display: inline-block;
   background-image: linear-gradient(to right, #3b82f6, #ef4444);
   -webkit-background-clip: text;
   background-clip: text;

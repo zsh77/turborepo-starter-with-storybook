@@ -4,17 +4,20 @@
   "private": true,
   "exports": {
     "./*": {
-      "types": "./dist/*/index.d.ts"
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.mjs",
+      "require": "./dist/*/index.js"
     },
-    "./logger": "./dist/logger/index.js",
-    "./classJoin": "./dist/classJoin/index.js"
+    "./logger": "./dist/logger/index.mjs",
+    "./classJoin": "./dist/classJoin/index.mjs"
   },
   "scripts": {
     "build": "tsup",
     "watch": "tsup --watch",
     "lint": "eslint src/",
     "typecheck": "tsc --noEmit",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -rf dist node_modules .turbo"
   },
   "jest": {
     "preset": "@repo/jest-presets/node"

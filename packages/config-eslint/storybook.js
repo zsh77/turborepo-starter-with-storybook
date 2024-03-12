@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended",
     "eslint-config-turbo",
   ],
   parser: "@typescript-eslint/parser",
@@ -27,12 +28,4 @@ module.exports = {
   rules: {
     "import/no-default-export": "off",
   },
-  overrides: [
-    {
-      files: ["./postcss.config.js", "./postcss.config.cjs"],
-      env: {
-        node: true,
-      },
-    },
-  ],
 };

@@ -15,11 +15,12 @@
   "scripts": {
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules .turbo",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --filter=!component-doc",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "storybook": "turbo run dev --filter=!nextjs-app"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

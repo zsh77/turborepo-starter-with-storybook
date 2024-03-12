@@ -1,8 +1,8 @@
 "use client";
 
-import { Button } from "@repo/ui/Button";
 import { CounterButton } from "@repo/ui/CounterButton";
 import { Link } from "@repo/ui/Link";
+import { Button } from "@repo/ui/Button";
 import "./homePage.css";
 
 export const metadata = {

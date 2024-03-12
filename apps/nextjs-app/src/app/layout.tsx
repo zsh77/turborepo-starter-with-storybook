@@ -1,3 +1,5 @@
+import "@repo/ui/styles.css";
+
 export default function RootLayout({
   children,
 }: {

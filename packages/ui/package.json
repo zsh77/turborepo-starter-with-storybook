@@ -5,17 +5,15 @@
   "license": "MIT",
   "sideEffects": false,
   "exports": {
-    "./*": {
-      "types": "./dist/*/index.d.ts"
-    },
-    "./Button": "./dist/Button/index.js",
-    "./CounterButton": "./dist/CounterButton/index.js",
-    "./Link": "./dist/Link/index.js"
+    "./styles.css": "./dist/styles.css",
+    "./Button": "./dist/Button/index.mjs",
+    "./CounterButton": "./dist/CounterButton/index.mjs",
+    "./Link": "./dist/Link/index.mjs"
   },
   "scripts": {
     "build": "tsup",
-    "clean": "rm -rf dist .turbo",
-    "dev": "tsup --watch",
+    "clean": "rm -rf dist .turbo node_modules",
+    "dev": "tsup --watch --onSuccess 'tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch'",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "jest"
