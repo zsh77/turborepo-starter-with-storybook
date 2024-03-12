@@ -6,9 +6,6 @@ import { fn } from "@storybook/test";
 const meta: Meta<typeof Button> = {
   title: "Example/Button",
   component: Button,
-  parameters: {
-    layout: "centered",
-  },
   tags: ["autodocs"],
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },

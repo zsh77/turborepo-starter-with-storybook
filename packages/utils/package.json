@@ -3,11 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./*": {
-      "types": "./dist/*/index.d.ts",
-      "import": "./dist/*/index.mjs",
-      "require": "./dist/*/index.js"
-    },
     "./logger": "./dist/logger/index.mjs",
     "./classJoin": "./dist/classJoin/index.mjs"
   },

@@ -1,11 +1,12 @@
 {
-  "name": "turborepo-starter-with-tsup",
-  "description": "This is a minified version of an official example of turborepo which uses tsup in its packages and has next.js and vite apps.",
+  "name": "turborepo-starter-with-storybook",
+  "description": "Example of turborepo configured with tsup,tailwindcss,storybook and a nextjs app ready to extend.",
   "private": false,
   "author": "Zahra Shahrouzi <z.shahrouzi@gmail.com>",
   "keywords": [
     "turbo",
     "turborepo",
+    "storybook",
     "nextjs",
     "vite",
     "tailwind",

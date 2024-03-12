@@ -1,4 +1,4 @@
-# Turborepo starter with tsup
+# Turborepo starter with storybook
 
 This is an unofficial starter Turborepo with multiple meta-frameworks all working in harmony and sharing packages.
 
@@ -11,9 +11,10 @@ This Turborepo includes the following packages and apps:
 ### Apps and Packages
 
 - `nextjs-app`: a [Next.js](https://nextjs.org/) app
-- `vite-app`: a [Vite](https://vitejs.dev/) single page app
+- `component-doc`: a [Vite](https://vitejs.dev/) app, serving Storybook app with the ui package imported
 - `@repo/eslint-config`: eslint configurations used throughout the monorepo
 - `@repo/jest-presets`: Jest configurations and scripts
+- `@repo/tailwind-config`: reusable tailwind configuration
 - `@repo/typescript-config`: tsconfig.json's used throughout the monorepo
 - `@repo/ui`: a React UI library bundled with `tsup`
 - `@repo/utils`: a Typescript library of tools bundled with `tsup`
@@ -28,3 +29,4 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
+- [Storybook](https://storybook.js.org/) for component documentation
