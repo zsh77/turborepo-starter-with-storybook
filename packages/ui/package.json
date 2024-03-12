@@ -13,7 +13,7 @@
   "scripts": {
     "build": "tsup && tailwindcss -i ./src/styles.css -o ./dist/styles.css",
     "clean": "rm -rf dist .turbo node_modules",
-    "dev": "tsup --watch --onSuccess 'tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch'",
+    "dev": "tsup --watch --onSuccess 'tailwindcss -i ./src/styles.css -o ./dist/styles.css'",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "jest"
